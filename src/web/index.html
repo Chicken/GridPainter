@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script defer src="script.js"></script>
+        <link rel="stylesheet" href="style.css">
+        <title>GridPainter</title>
+    </head>
+
+    <body>
+        <h1>GridPainter</h1>
+        <table id="game">
+        </table>
+
+        <div id="controls">
+            <p class="hide" id="time">00:00</p><br><br>
+            <button id="start">Start Game</button><button class="hide" id="reset">Reset Board</button><button class="hide" id="new">New Game</button>
+            <div class="hide" id="winBox">
+                <h2>You win!</h2>
+                <p id="ftime">Final time: 00:00</p>
+                <div id="submitBox" class="hide">
+                    <p id="lbtime">That is good enough for the leaderboard!</p>
+                    <input placeholder="Name" type="text" id="name"><button id="submitBtn">Submit Score</button>
+                </div>
+            </div>
+        </div>
+        
+        <div id="leaderboard">
+            <h2>Leaderboard</h2>
+            <p class="lbitem">Empty :c</p>
+        </div>
+    </body>
+
+</html>
