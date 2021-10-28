@@ -2,7 +2,7 @@ const express = require("express");
 const app = new express();
 const { games, leaderboard } = require("./db");
 const { createGame, verifyGame, genId, formatTime, escape } = require("./util");
-const { port } = require("../config.json");
+const { port } = require("./config.js");
 
 leaderboard.ensure(".", []).then(() => {
     app.listen(port, () => console.log("Listening..."));

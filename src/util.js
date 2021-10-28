@@ -1,6 +1,6 @@
 const { games } = require("./db");
 const { nanoid } = require("nanoid");
-const { hardness: _hardness } = require("../config.json");
+const { hardness: _hardness } = require("./config.js");
 const hardness = Math.min(Math.max(_hardness, 1), 80);
 
 const random = (min, max) => Math.floor(Math.random() * (max + 1)) + min;

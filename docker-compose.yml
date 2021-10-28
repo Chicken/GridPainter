@@ -1,0 +1,13 @@
+version: "3.5"
+
+services:
+  app:
+    image: antticodes/gridpainter
+    environment:
+      - PORT=8080
+      - HARDNESS=40
+    ports:
+      - 8222:8080
+    volumes:
+      - ./data:/app/data
+    restart: unless-stopped
